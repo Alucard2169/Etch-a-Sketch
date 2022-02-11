@@ -12,7 +12,13 @@ button.addEventListener('click', function (){
     checkSize(size);
 })
 
-
+let mouse_down = false;
+document.body.onmousedown = function () {
+    mouse_down = true;
+}
+document.body.onmouseup = function () {
+    mouse_down = false;
+}
 function canvas(size) {
     container.style.setProperty('--grid-column', size);
     container.style.setProperty('--grid-row', size);
@@ -28,8 +34,8 @@ canvas(16)
 
 
 function changeColor(e) {
-    if (e.type == 'mouseover' && !mousedown) return
-    else{
+    
+    if(mouse_down){
         let color1 = Math.floor(Math.random() * 256);
         let color2 = Math.floor(Math.random() * 256);
         let color3 = Math.floor(Math.random() * 256);
