@@ -1,4 +1,9 @@
 # Etch-a-Sketch
 DOM project ( The Odin Project )
 
-* work in progress
+## Basic functionality
+
+> ### create custom Grid
+> ### use color picker functionality
+> ### use random color functionality
+> ### clear grid on command
