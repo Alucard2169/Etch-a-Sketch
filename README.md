@@ -7,3 +7,7 @@ DOM project ( The Odin Project )
 > ### use color picker functionality
 > ### use random color functionality
 > ### clear grid on command
+
+## preview
+
+![etch-a-sketch preview](https://github.com/Alucard2169/Etch-a-Sketch/blob/main/SharedScreenshot.jpg)
