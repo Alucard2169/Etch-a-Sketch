@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+h1,
+h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline white wavy;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .size {
+            background-color: #A33327;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            padding: 1rem;
+            border-radius: 50px;
+
+        }
+
+        .cust {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: #FF4834;
+            font-size: 1.5rem;
+            font-weight: 800;
+
+            input {
+                appearance: textfield;
+                padding: 1rem;
+                border-radius: 50px;
+                border: none;
+                font-size: 1rem;
+                color: #FF4834;
+                font-weight: 800;
+            }
+
+            .submit {
+                background-color: white;
+                color: black;
+                font-weight: 800;
+                padding: 1rem 1.5rem;
+                border-radius: 50px;
+                transition: .5s ease;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .canvas {
+        background: white;
+        width: 25rem;
+        height: 30rem;
+        display: grid;
+        grid-template-columns: repeat(var(--grid-col), 1fr);
+        grid-template-rows: repeat(var(--grid-row), 1fr);
+    }
+
+    .addition {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .pC {
+            font-size: 1.5rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-top: 1rem;
+                width: 100%;
+            }
+        }
+
+        .random,
+        .colorBtn,
+        .eraser {
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+        }
+
+        .clear {
+            margin-top: 4rem;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            transition: .5s ease-in;
+
+            &:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: #FF4834;
+    color: white;
+}

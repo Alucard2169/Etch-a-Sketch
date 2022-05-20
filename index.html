@@ -2,14 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <script src="app.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div class="container">
-        
-    </div>
+    <h1>Etch-A-Sketch</h1>
+    <main>
+        <section class="options">
+            <h2>Choice cursor size: </h2>
+            <button class="size" value=32>32</button>
+            <button class="size" value=64>64</button>
+               <label for="custom" class="cust">Custom:
+                <input type="number" id="custom" placeholder="32x" min=1 max=100>
+                <button class="submit">Submit</button>
+            </label>
+            
+        </section>
+
+        <section class="canvas"></section>
+
+        <section class="addition">
+            <label for="color" class="pC">Pick your color:
+                <input type="color" id="color">
+            </label>
+            <button class="colorBtn">Color</button>
+            <button class="random">Random Color</button>
+            <button class="eraser">Erase</button>
+            <button class="clear">Clear</button>
+        </section>
+    </main>
 </body>
 </html>

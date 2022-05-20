@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161616;
+}
+
+h1,
+h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+  -webkit-text-decoration: underline white wavy;
+          text-decoration: underline white wavy;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+main .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+main .options .size {
+  background-color: #A33327;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+main .options .cust {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  color: #FF4834;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+main .options .cust input {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  color: #FF4834;
+  font-weight: 800;
+}
+
+main .options .cust .submit {
+  background-color: white;
+  color: black;
+  font-weight: 800;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+main .options .cust .submit:hover {
+  background-color: black;
+  color: white;
+}
+
+main .canvas {
+  background: white;
+  width: 25rem;
+  height: 30rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[var];
+      grid-template-columns: repeat(var(--grid-col), 1fr);
+  -ms-grid-rows: (1fr)[var];
+      grid-template-rows: repeat(var(--grid-row), 1fr);
+}
+
+main .addition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+main .addition .pC {
+  font-size: 1.5rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .addition .pC input {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+main .addition .random,
+main .addition .colorBtn,
+main .addition .eraser {
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+}
+
+main .addition .clear {
+  margin-top: 4rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+main .addition .clear:hover {
+  background-color: red;
+  color: white;
+}
+
+.active {
+  background-color: #FF4834;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
